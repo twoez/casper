@@ -24,6 +24,9 @@ No context switching. No boilerplate. Just working code.
 
 **Works where you already work.** Submit tasks from GitHub Issues, GitLab Issues, Slack, or directly via the REST API. Caspers normalizes all inputs into the same pipeline -- no special setup per channel.
 
+**Interactive or autonomous execution.** Stay in control with **interactive mode**. When enabled, agents keep the human in the loop and will ask questions whenever they need clarification — for example when proposing a plan, choosing an implementation strategy, or making important decisions. This allows you to guide the process step-by-step while the agent does the heavy lifting.  
+Prefer full automation? Disable interactive mode and the agents will execute the task completely autonomously.
+
 **Your LLM, your terms.** Use Claude, GPT-4o, Gemini, or any OpenAI-compatible endpoint (Ollama, vLLM, LM Studio) with an API key. Or skip the API entirely and use your existing Claude or Gemini subscription via the CLI tools -- zero additional cost.
 
 **Validation before you ever see the PR.** Every change runs through a configurable pipeline: formatter, linter, typechecker, tests, integration tests, build. The agent auto-repairs failures and retries before surfacing the PR.

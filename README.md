@@ -51,7 +51,7 @@ Preview jobs can also generate **build artifacts** such as APK files, compiled b
 
 **Open source and feature-complete.** The Community Edition is fully open source under the MIT license and ships with every core capability — no artificial limits, no feature gates. Self-host it on your own infrastructure and own your entire pipeline.
 
-**Managed SaaS available.** Prefer not to self-host? Casper Engine Cloud is a hosted, closed-source edition with additional features and zero operational overhead — we handle infrastructure, updates, and scaling for you.
+**Managed SaaS available.** Prefer not to self-host? Casper Cloud is a hosted, closed-source edition with additional features and zero operational overhead — we handle infrastructure, updates, and scaling for you.
 
 ---
 

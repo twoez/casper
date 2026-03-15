@@ -1,18 +1,22 @@
-# 👻 Caspers
+# 👻 Casper Engine
 
 > 🚧 **Currently in development**  
-> Caspers is actively being built and will be released soon.  
+> Casper Engine is actively being built and will be released soon.  
 > If you're interested, ⭐ follow/watch this repository for updates and early releases.
 
-**Agentic coding system** - receive tasks from Slack, GitHub, GitLab or a REST API, dispatch them to an LLM agent running inside an isolated environment, validate changes through a multi-step pipeline, open pull requests, and iterate on review feedback.
+**Agentic coding engine** — receive tasks from Slack, GitHub, GitLab or a REST API, dispatch them to LLM agents running inside isolated environments, validate changes through a multi-step pipeline, open pull requests, and iterate on review feedback.
 
 ---
 
 ## Overview
 
-Caspers bridges the gap between developer intent and working code. You describe what you want in a GitHub issue, a Slack message or a REST call and Caspers agentically implements it, validates it, opens a pull request, and refines it based on your review.
+Casper Engine is the foundation for building agent-driven development tools.
 
-Behind the scenes, Caspers acts like your own team of **AI ghost producers** — quietly turning tasks and ideas into working code while you stay focused on the bigger picture.
+It bridges the gap between developer intent and working code. You describe what you want in a GitHub issue, a Slack message or a REST call and Casper Engine agentically implements it, validates it, opens a pull request, and refines it based on your review.
+
+Behind the scenes, Casper Engine acts like your own team of **AI ghost producers** — quietly turning tasks and ideas into working code while you stay focused on the bigger picture.
+
+The goal of Casper Engine is to provide a **powerful backend engine** that developers can build their own interfaces on top of. Whether you want a simple Kanban-style task board, a chat-based interface, or a full **Replit-like development environment**, Casper Engine provides the infrastructure to make it possible.
 
 No context switching. No boilerplate. Just working code.
 
@@ -22,11 +26,11 @@ No context switching. No boilerplate. Just working code.
 
 **Work from anywhere.** Create and refine tasks from your phone, laptop, or anywhere in the world. Describe work in natural language and receive previews or artifacts without needing a local development environment.
 
-**Works where you already work.** Submit tasks from GitHub Issues, GitLab Issues, Slack, or directly via the REST API. Caspers normalizes all inputs into the same pipeline -- no special setup per channel.
+**Works where you already work.** Submit tasks from GitHub Issues, GitLab Issues, Slack, or directly via the REST API. Casper Engine normalizes all inputs into the same pipeline — no special setup per channel.
 
 **Interactive or autonomous execution.** Stay in control with **interactive mode**. When enabled, agents keep the human in the loop and will ask questions whenever they need clarification — for example when proposing a plan, choosing an implementation strategy, or making important decisions. This allows you to guide the process step-by-step while the agent does the heavy lifting.
 
-**Your LLM, your terms.** Use Claude, GPT-4o, Gemini, or any OpenAI-compatible endpoint (Ollama, vLLM, LM Studio) with an API key. Or skip the API entirely and use your existing Claude or Gemini subscription via the CLI tools -- zero additional cost.
+**Your LLM, your terms.** Use Claude, GPT-4o, Gemini, or any OpenAI-compatible endpoint (Ollama, vLLM, LM Studio) with an API key. Or skip the API entirely and use your existing Claude or Gemini subscription via the CLI tools — zero additional cost.
 
 **Validation before you ever see the PR.** Every change runs through a configurable pipeline: formatter, linter, typechecker, tests, integration tests, build. The agent auto-repairs failures and retries before surfacing the PR.
 
@@ -35,7 +39,7 @@ No context switching. No boilerplate. Just working code.
 **Preview environments and artifacts.** Optionally spin up Docker Compose previews per branch (identified by `casper/<task-uuid>`) via `.caspers/preview.yml`. Routing is label-driven through your server-side proxy (Caddy/Traefik/Nginx).  
 Preview jobs can also generate **build artifacts** such as APK files, compiled binaries, static builds, or other downloadable outputs so you can test results immediately without merging the code.
 
-**Review-driven iteration.** Refine results directly from your code review workflow. Comment on a pull/merge request, leave feedback on specific lines of code (inline review comments), or respond in a discussion thread. Caspers picks up the feedback, re-runs the agent with your instructions, updates the branch, and waits for the next review.
+**Review-driven iteration.** Refine results directly from your code review workflow. Comment on a pull/merge request, leave feedback on specific lines of code (inline review comments), or respond in a discussion thread. Casper Engine picks up the feedback, re-runs the agent with your instructions, updates the branch, and waits for the next review.
 
 **Single agents or agent teams.** Run a single agent on a focused task, or assemble a team of agents that collaborate on a larger objective. Team members communicate with each other, decompose work, execute in parallel where possible, and merge the results — all within one task lifecycle.
 
@@ -47,7 +51,7 @@ Preview jobs can also generate **build artifacts** such as APK files, compiled b
 
 **Open source and feature-complete.** The Community Edition is fully open source under the MIT license and ships with every core capability — no artificial limits, no feature gates. Self-host it on your own infrastructure and own your entire pipeline.
 
-**Managed SaaS available.** Prefer not to self-host? Caspers Cloud is a hosted, closed-source edition with additional features and zero operational overhead — we handle infrastructure, updates, and scaling for you.
+**Managed SaaS available.** Prefer not to self-host? Casper Engine Cloud is a hosted, closed-source edition with additional features and zero operational overhead — we handle infrastructure, updates, and scaling for you.
 
 ---
 
@@ -62,7 +66,7 @@ flowchart LR
         API[REST API]
     end
 
-    subgraph Caspers Platform
+    subgraph Casper Engine Platform
         Q[Task Queue]
         W[Worker]
 

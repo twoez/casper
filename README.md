@@ -55,6 +55,20 @@ Preview jobs can also generate **build artifacts** such as APK files, compiled b
 
 ---
 
+## Ecosystem Vision
+
+Casper Engine is designed as the **core infrastructure layer** for agent-driven development platforms.
+
+The engine itself focuses on orchestration, agents, execution environments, and task pipelines. On top of this engine, multiple interfaces and products will be built.
+
+- **Casper Engine** — the open source orchestration engine and agent platform
+- **Casper Cloud** — a hosted managed version with zero infrastructure management
+- **Casper Studio** — a full browser-based development environment (similar to Replit)
+
+Because Casper Engine exposes its functionality through APIs and workers, developers can also build **their own custom frontends and workflows** on top of it.
+
+---
+
 ## How It Works
 
 ```mermaid
